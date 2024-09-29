@@ -17,28 +17,32 @@
     <header class="bg-purple-800 fixed top-0 left-0 w-full z-50">
 <nav class=" container relative h-14 flex justify-between items-center">
     <div>
-        <a href="#"  class="text-3xl uppercase ">
+        <a href="#"  class="text-3xl uppercase px-2">
             Bur<span class="text-amber-600 font-Oswald">ger</span></a>
     </div>
-    <div class="absolute top-0 left-0 w-full py-14 bg-purple-800 border-b border-yellow-600">
+    <!---navigation bar-->
+    <div class=" hidden absolute top-0 left-0 w-full py-14 bg-purple-800 border-b border-yellow-600" id="nav-menu">
         <ul class="flex flex-col items-center gap-5">
-            <li><a href="#home" class=" hover:text-yellow-600 ease-in duration ">Home</a></li>
-            <li> <a href="#about" class="hover:text-yellow-600 ease-in duration-200">About</a></li>
-            <li><a href="#menu" class="hover:text-yellow-600 ease-in duration-200">Menu</a></li>
-            <li><a href="#contact" class="hover:text-yellow-600 ease-in duration-200">Contact</a></li>
-            <li><a href="#reviews" class="hover:text-yellow-600 ease-in duration-200 ">Reviews</a></li>
+            <!--nav__link to help close the menu-->
+            <li><a href="#home" class="nav__link hover:text-yellow-600 ease-in duration ">Home</a></li>
+            <li> <a href="#about" class="nav__link hover:text-yellow-600 ease-in duration-200">About</a></li>
+            <li><a href="#menu" class="nav__link hover:text-yellow-600 ease-in duration-200">Menu</a></li>
+            <li><a href="#contact" class=" nav__linkhover:text-yellow-600 ease-in duration-200">Contact</a></li>
+            <li><a href="#reviews" class="nav__link hover:text-yellow-600 ease-in duration-200 ">Reviews</a></li>
         </ul>
-        <div>
+        <!--close icon-->
+        <div class="absolute top-[0.7rem] right-4 text-3xl cursor-pointer " id="nav-close">
             <i class="ri-close-line"></i>
         </div>
     </div>
-    <div>
-        <i class="ri-moon-line"></i>
-        <div>
-            <i class="ri-menu-2-line"></i>
+    <div class="flex items-center gap-5 mr-3">
+        <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+        <div id="hamberger">
+            <i class="ri-menu-2-line  cursor-pointer text-xl"></i>
         </div>
     </div>
 </nav>
     </header>
+    <script src="main.js"></script>
 </body>
 </html>
